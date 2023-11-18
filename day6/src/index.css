@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  overflow-x: hidden;
+}
+
+#main {
+  height: 600vh;
+  background-color: rgb(0, 255, 149);
+}
+
+.boxesSx {
+  height: 30vh;
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.boxesDx {
+  height: 30vh;
+  transform: translateX(-400%);
+  transition: transform 0.4s ease;
+}
+
+.show {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.visibleEver {
+  height: 30vh;
+}/*# sourceMappingURL=index.css.map */

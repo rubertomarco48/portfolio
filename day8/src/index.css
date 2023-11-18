@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=DotGothic16&family=Pixelify+Sans:wght@400;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  transition: all 0.5s;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, .bottone {
+  font-family: "Dancing Script", cursive;
+  font-family: "DotGothic16", sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.bordoSotto {
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::-moz-placeholder {
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input {
+  margin-top: 2rem;
+}
+
+.label1 {
+  position: absolute;
+  top: 100px;
+  color: white;
+  width: 80%;
+  text-align: left;
+  padding: 1rem 0;
+}
+
+.label2 {
+  position: absolute;
+  top: 180px;
+  color: white;
+  width: 80%;
+  text-align: left;
+  padding: 1rem 0;
+}
+
+label, input {
+  transition: all 0.5s;
+  animation: ease-in-out;
+}
+
+form {
+  position: relative;
+}/*# sourceMappingURL=index.css.map */

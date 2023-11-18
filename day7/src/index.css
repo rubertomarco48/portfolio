@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.container1 {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.container1 button {
+  color: white;
+  font-size: 3rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  border-radius: 1rem;
+}
+.container1 button:hover {
+  color: rgba(87, 84, 236, 0.7);
+  background-color: white;
+  border-color: rgba(87, 84, 236, 0.7);
+}
+
+.container2 {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.container2 button {
+  color: white;
+  font-size: 3rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  border-radius: 1rem;
+}
+.container2 button:hover {
+  color: rgba(0, 0, 0, 0.479);
+  background-color: white;
+  border-color: rgba(0, 0, 0, 0.479);
+}
+
+.right {
+  background: url(./assets/xbox.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 1s;
+}
+
+.right::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.479);
+  transition: all 1s;
+}
+
+.left::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(87, 84, 236, 0.7);
+  transition: all 1s;
+}
+
+.left {
+  background: url(./assets/ps.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 1s;
+}
+
+.hover-left {
+  width: 30%;
+}
+.hover-left::before {
+  width: 30%;
+}
+
+.hover-right {
+  width: 30%;
+}
+.hover-right::before {
+  width: 30%;
+}
+
+.unhover {
+  width: 70%;
+}
+.unhover::before {
+  width: 70%;
+}/*# sourceMappingURL=index.css.map */
